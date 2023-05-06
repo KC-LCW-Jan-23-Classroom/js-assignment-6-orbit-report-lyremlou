@@ -12,15 +12,15 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
-   }
+   }	
 	
-	isSpaceDebris(): boolean {
-		if(this.type === "Space Debris") {
+	isSpaceDebris(type: string): boolean {
+		type = this.type;
+		if(type === "Space Debris") {
 			return true;
 		} else {
 			return false;
 		}
-		
    }
 
 }
